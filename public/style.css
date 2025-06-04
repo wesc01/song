@@ -1,5 +1,5 @@
 body {
-    background: rgb(4, 4, 4);
+    background: rgb(0, 0, 0);
     overflow: hidden;
     height: 100%;
 }
@@ -49,6 +49,8 @@ header {
     color: aliceblue;
     font-size: 20px;
     font-weight: bold;
+    position: relative;
+    left: 440px;
    }
     li a:hover {
         color: red;
@@ -56,24 +58,47 @@ header {
     }
 }
 .bi {
-    background-color: #fb0000;
-    width: 20%;
-    height: 90%;
+    background: linear-gradient(45deg, #666363,#fa0303) ;
+
+    width: 21%;
+    height: 80%;
 position: absolute;
 top:10%;
 border-radius: 10px;
 gap: 10px;
-& a {
+& .we {
     position: relative;
     left: 80%;
-    bottom: 10%;
+    bottom: 6%;
     border-radius: 20px;
-    height: 20px;
+    height: 10px;
     text-decoration: none;
     color: aliceblue;
     font-size: 20px;
     font-weight: bold;
-    padding: 10px;}
+    padding: 10px;
+} 
+& .rer {
+
+ margin: 10px;   
+}
+
+     & .ul1 {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+        top: 2%;
+        bottom: 80%;
+        list-style: none;
+        & a {
+            position: relative;
+            text-decoration: none;
+            top: 20%;
+            color: black;
+        }
+        
+    }
 }
 .bi a:hover {
     background-color: rgb(246, 243, 243);
@@ -108,8 +133,10 @@ gap: 10px;
         font-size: 10px;
         font-weight: bold;
         cursor: pointer;
-
     }
+    }
+    
+
     }
 .stap {
         background-color: black;
@@ -129,14 +156,495 @@ gap: 10px;
         cursor: pointer;
 
     }
-    & ul {
-        display: flex;
-        flex-direction: column;
+   
+}
+.sla {
+    position: absolute;
+    top: 10%;
+    left: 22%;
+    width: 80%;
+    height: 300vh;
+    height: 95%;
+    max-height: 735px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #000000;
+}
+.syd {
+    background: linear-gradient(45deg, #666363,#fa0303) ;
+    width: 96%;
+    background-color: red;
+    position: relative;
+    height: 100vh;
+    white-space: nowrap;
+    overflow-x: auto;
+    border-radius: 10px;
+        & a {
+        text-decoration: none;
+        color: black;
+        }    
+    & img {
         gap: 10px;
+        border: groove;
+        border-color:rgb(97, 97, 97);
+        box-shadow: 0 0 10px rgba(100, 96, 96, 0.5);
+    }
+    & .ou {
         position: relative;
-        left: 20%;
+        bottom: 5%;
+        font-size: large;
+        font-size: 15px;
+        font-family: fantasy;
+
+    }
+    & .ou1 {
+         position: relative;
         bottom: 10%;
-        list-style: none;
+        font-size: 10px;
+
+
+    }
+    & .ou2 {
+
+        position: relative;
+        bottom: 13%;
+        font-size: 10px;
+    }
+    
     }
 
+
+.syd img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.syd p:hover{
+    border-radius: 5px;
+    border: groove;
+    background: #f80000;
+     text-decoration: underline;
+}
+
+
+
+/* carrousel1 */
+
+
+/* Adicione ao final do seu style.css */
+.playlist-carousel {
+   align-items: center;
+   width:95%;
+    position: relative;
+    bottom: -30px;
+}
+.carousel-track{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    left: 30px;
+    & ul {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+    }
+    & img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        scroll-snap-align: start;
+        border: groove;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+
+    }
+
+}
+.carousel-btn {
+    background: linear-gradient(45deg, #666363,#fa0303) ;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+.carousel-btn.left {
+position: absolute;
+bottom: 93%;
+}
+.carousel-btn.right {
+position: absolute;
+bottom: 93%;
+    right: -4%;
+}
+
+.playlist-carousel .carousel-btn {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+/* Mostra o botão ao passar o mouse no carrossel */
+.playlist-carousel:hover .carousel-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+ /* proximo */ 
+
+ .playlist-carousel1 {
+
+    align-items: center;
+    position: relative; 
+    width: 98%;
+
+ }
+
+ .carousel-track1 { 
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    left: 30px;
+    & ul {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+    }
+
+    & img {
+        border-radius: 50%;
+    }
+
+
+ }
+
+ .carousel-btn1 {
+    background: linear-gradient(45deg, #666363,#fa0303) ;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-btn1.left {
+position: absolute;
+bottom: 57%;
+}
+.carousel-btn1.right {
+position: absolute;
+bottom: 57%;
+    right: -5%;
+}
+
+.playlist-carousel1 .carousel-btn1 {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+/* Mostra o botão ao passar o mouse no carrossel */
+.playlist-carousel1:hover .carousel-btn1 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* proximo */ 
+
+.playlist-carousel2 {
+    align-items: center;
+    position: relative;
+    width: 98%;
+    bottom: -50px;
+
+}
+
+.carousel-track2 {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    left: 30px;
+    gap: 10px;
+    & ul {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+    }
+
+}
+.carousel-btn2 {
+    border: none;
+    background: linear-gradient(45deg, #666363,#fa0303) ;
+
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-btn2.left {
+position: absolute;
+bottom: 57%;
+}
+.carousel-btn2.right {
+position: absolute;
+bottom: 57%;
+    right: -4%;
+}
+
+.playlist-carousel2 .carousel-btn2 {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+/* Mostra o botão ao passar o mouse no carrossel */
+.playlist-carousel2:hover .carousel-btn2 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* proximo */ 
+
+.playlist-carousel3{
+    align-items: center;
+    position: relative;
+    width: 98%;
+    bottom: -50px;
+
+}
+
+.carousel-track3 {
+
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    left: 30px;
+    & ul {
+        display: flex;
+        list-style: none;
+    }
+}
+.carousel-btn3 {
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-btn3.left {
+position: absolute;
+bottom: 47%;
+}
+.carousel-btn3.right {
+position: absolute;
+bottom: 47%;
+    right: -4%;
+}
+
+
+.playlist-carousel3 .carousel-btn3 {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+/* Mostra o botão ao passar o mouse no carrossel */
+.playlist-carousel3:hover .carousel-btn3 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* proximo */
+
+.playlist-carousel4 {
+    align-items: center;
+    position: relative;
+    width: 98%;
+    bottom: -50px;
+
+}
+  
+
+.carousel-track4 {
+
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    left: 30px;
+    & ul {
+        display: flex;
+        list-style: none;
+    }
+}
+.carousel-btn4 {
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-btn4.left {
+position: absolute;
+bottom: 47%;
+}
+.carousel-btn4.right {
+position: absolute;
+bottom: 47%;
+    right: -4%;
+}
+
+.playlist-carousel4 .carousel-btn4 {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+/* Mostra o botão ao passar o mouse no carrossel */
+.playlist-carousel4:hover .carousel-btn4 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* proximo */
+.playlist-carousel5 {
+    align-items: center;
+    position: relative;
+    width: 98%;
+    bottom: -50px;
+
+}
+.carousel-track5 {
+
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    left: 30px;
+    & ul {
+        display: flex;
+        list-style: none;
+    }
+}
+.carousel-btn5 {
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-btn5.left {
+position: absolute;
+bottom: 47%;
+}
+.carousel-btn5.right {
+position: absolute;
+bottom: 47%;
+    right: -4%;
+} 
+
+
+.playlist-carousel5 .carousel-btn5 {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+/* Mostra o botão ao passar o mouse no carrossel */
+.playlist-carousel5:hover .carousel-btn5 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+.sobre {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    bottom: -50px;
+
+    & ul {
+        list-style: none;
+        gap: 40px;
+    & li {
+        margin: 10px 0;
+        gap: 10px;
+    }
+    & a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        }
+    }
+    }
+    .sobre1{
+        position: relative;
+        bottom: -50px;
+    }
+    .sobre li:hover {
+        color: red;
+        text-decoration: underline;
+    }
+
+.premium {
+    position: absolute;
+    bottom: 0px;
+    height: 80px;
+    width: 100%;
+    background-color: #f70808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1;
+    gap: 30px;
+    border:groove;
 }

@@ -1,0 +1,320 @@
+body {
+    overflow: hidden;
+}
+.sla {
+    width: 90%;
+    background-color: blue;
+    height: 90%;
+}
+.syd{
+    width: 90%;
+    background-color: red;
+    position: relative;
+    height: 100vh;
+    left: 70px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.playlist-carousel {
+   align-items: center;
+   width:95%;
+    position: relative;
+    bottom: -30px;
+}
+.carousel-track{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    left: 30px;
+    & ul {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+    }
+    & img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        scroll-snap-align: start;
+        border: groove;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+
+    }
+
+}
+.carousel-btn {
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+.carousel-btn.left {
+position: absolute;
+bottom: 93%;
+}
+.carousel-btn.right {
+position: absolute;
+bottom: 93%;
+    right: -4%;
+}
+ /* proximo */ 
+
+ .playlist-carousel1 {
+
+    align-items: center;
+    position: relative; 
+    width: 98%;
+
+ }
+
+ .carousel-track1 { 
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    left: 30px;
+    & ul {
+        display: flex;
+        list-style: none;
+    }
+
+
+ }
+
+ .carousel-btn1 {
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-btn1.left {
+position: absolute;
+bottom: 57%;
+}
+.carousel-btn1.right {
+position: absolute;
+bottom: 57%;
+    right: -4%;
+}
+
+/* proximo */ 
+
+.playlist-carousel2 {
+    align-items: center;
+    position: relative;
+    width: 98%;
+    bottom: -50px;
+
+}
+
+.carousel-track2 {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    left: 30px;
+    & ul {
+        display: flex;
+        list-style: none;
+    }
+
+}
+.carousel-btn2 {
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-btn2.left {
+position: absolute;
+bottom: 57%;
+}
+.carousel-btn2.right {
+position: absolute;
+bottom: 57%;
+    right: -4%;
+}
+
+/* proximo */ 
+
+.playlist-carousel3{
+    align-items: center;
+    position: relative;
+    width: 98%;
+    bottom: -50px;
+
+}
+
+.carousel-track3 {
+
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    left: 30px;
+    & ul {
+        display: flex;
+        list-style: none;
+    }
+}
+.carousel-btn3 {
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-btn3.left {
+position: absolute;
+bottom: 47%;
+}
+.carousel-btn3.right {
+position: absolute;
+bottom: 47%;
+    right: -4%;
+}
+
+/* proximo */
+
+.playlist-carousel4 {
+    align-items: center;
+    position: relative;
+    width: 98%;
+    bottom: -50px;
+
+}
+  
+
+.carousel-track4 {
+
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    left: 30px;
+    & ul {
+        display: flex;
+        list-style: none;
+    }
+}
+.carousel-btn4 {
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-btn4.left {
+position: absolute;
+bottom: 47%;
+}
+.carousel-btn4.right {
+position: absolute;
+bottom: 47%;
+    right: -4%;
+}
+
+/* proximo */
+.playlist-carousel5 {
+    align-items: center;
+    position: relative;
+    width: 98%;
+    bottom: -50px;
+
+}
+.carousel-track5 {
+
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    left: 30px;
+    & ul {
+        display: flex;
+        list-style: none;
+    }
+}
+.carousel-btn5 {
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-btn5.left {
+position: absolute;
+bottom: 47%;
+}
+.carousel-btn5.right {
+position: absolute;
+bottom: 47%;
+    right: -4%;
+} 
+
+.sobre {
+    display: flex;
+    gap: 50px;
+    border: groove;
+    position: relative;
+    bottom: -50px;
+
+    & ul {
+        list-style: none;
+        gap: 40px;
+    & li {
+        margin: 10px 0;
+        gap: 10px;
+    }
+    & a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        }
+    }
+    }
+    .sobre1{
+        position: relative;
+        bottom: -50px;
+    }
+
